@@ -14,6 +14,7 @@ wn = turtle.Screen()
 wn.title("Snake Game") 
 wn.bgcolor("blue") 
  
+wn.setup(width=600, height=600) 
 wn.tracer(0) 
    
 head = turtle.Turtle() 
@@ -25,8 +26,8 @@ head.direction = "Stop"
   
 
 food = turtle.Turtle() 
-colors = random.choice(['red', 'green', 'black']) 
-shapes = random.choice(['square', 'triangle', 'circle']) 
+colors = random.choice(['red', 'green', 'black', 'pink']) 
+shapes = random.choice(['square', 'triangle', 'circle', 'rectangle']) 
 food.speed(0) 
 food.shape(shapes) 
 food.color(colors) 
